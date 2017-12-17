@@ -1,0 +1,12 @@
+<beans>
+	<context:component-scan base-package="com.pack" />
+	<!-- configuring DefaultAnnotaionHandlerMapping -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotaionHandlerMapping" />
+	<!-- configuring view resolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/" />
+		<property name="sufix" value=".jsp" />
+	</bean>
+</beans>
